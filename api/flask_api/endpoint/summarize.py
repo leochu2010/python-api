@@ -5,6 +5,7 @@ from api.service import TextRank
 summarize_apis = Blueprint("summarize_apis", __name__)
 text_rank = TextRank()
 
+
 @summarize_apis.route('/api/textrank', methods=['POST'])
 def get_text_rank():
     text = request.form['text']
