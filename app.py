@@ -17,4 +17,6 @@ app.register_blueprint(summarize_apis)
 
 logging.getLogger().info("APIs ready")
 
+if __name__ == '__main__':
+    app.run(debug=True)
 
