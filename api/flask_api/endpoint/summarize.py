@@ -1,6 +1,5 @@
 from flask import Blueprint, request
-from api.service import TextRank
-
+from api.service.text_rank import TextRank
 
 summarize_apis = Blueprint("summarize_apis", __name__)
 text_rank = TextRank()
